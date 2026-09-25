@@ -51,3 +51,26 @@ button{
     border-radius: 20px;
 }
 
+.tasks{
+    text-align: center;
+    border-radius: 30px;
+    border: solid;
+    border-color: antiquewhite;
+    margin: 25px;
+    margin-bottom: -15px;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 5px rgb(121, 8, 8);
+}
+
+#task-input{
+    border: solid;
+    border-radius: 20px;
+    border-color: red;
+    border-width: 2px;
+    margin-bottom: 5px;
+}
+
+#task-input:focus{
+    outline: none; /*removes default browser ring*/
+    border-color: brown;/*applies custom active*/
+}
