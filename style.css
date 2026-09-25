@@ -52,7 +52,7 @@ button{
 }
 
 .tasks{
-    text-align: center;
+    align-items: center;
     border-radius: 30px;
     border: solid;
     border-color: antiquewhite;
@@ -60,17 +60,43 @@ button{
     margin-bottom: -15px;
     background-color: antiquewhite;
     box-shadow: 2px 2px 5px rgb(121, 8, 8);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 #task-input{
+    height: 20px;
     border: solid;
     border-radius: 20px;
     border-color: red;
     border-width: 2px;
     margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #task-input:focus{
     outline: none; /*removes default browser ring*/
-    border-color: brown;/*applies custom active*/
+    border-color: rgb(255, 33, 33);/*applies custom active*/
+}
+
+#task-tracker{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#task-tabs{
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: justify;
+    min-height: 30px; /* this makes sure the div starts at 30 but doesnt stop there, and is dynamic enough to not overflow*/
+    min-width: 30px;
+    background-color: rgb(179, 63, 63);
+    color:whitesmoke;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
 }
